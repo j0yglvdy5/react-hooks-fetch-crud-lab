@@ -43,6 +43,12 @@ test("creates a new question when the form is submitted", async () => {
   fireEvent.change(screen.queryByLabelText(/Answer 2/), {
     target: { value: "Test Answer 2" },
   });
+  fireEvent.change(screen.queryByLabelText(/Answer 3/), {
+    target: { value: "Test Answer 3" },
+  });
+  fireEvent.change(screen.queryByLabelText(/Answer 4/), {
+    target: { value: "Test Answer 4" },
+  });
   fireEvent.change(screen.queryByLabelText(/Correct Answer/), {
     target: { value: "1" },
   });
